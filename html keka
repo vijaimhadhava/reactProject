@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Directory</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-gray-800 text-white fixed h-full">
+        <div class="py-4 px-6">
+            <h2 class="text-2xl font-bold">keka</h2>
+            <nav class="mt-6">
+                <a href="#" class="block py-2.5 px-4 rounded hover:bg-gray-700">Home</a>
+                <a href="#" class="block py-2.5 px-4 rounded hover:bg-gray-700">Me</a>
+                <a href="#" class="block py-2.5 px-4 rounded hover:bg-gray-700">Inbox</a>
+                <a href="#" class="block py-2.5 px-4 rounded hover:bg-gray-700">My Team</a>
+                <a href="#" class="block py-2.5 px-4 rounded hover:bg-gray-700">My Finances</a>
+                <a href="#" class="block py-2.5 px-4 rounded hover:bg-gray-700">Org</a>
+                <a href="#" class="block py-2.5 px-4 rounded hover:bg-gray-700">Performance</a>
+            </nav>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="ml-64">
+        <!-- Header -->
+        <header class="bg-white shadow p-4 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <h1 class="text-xl font-bold text-gray-800">iamneo</h1>
+                <input type="text" placeholder="Search employees or actions" class="border p-2 rounded-lg">
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-gray-600 hover:text-blue-600"><i class="fas fa-bell"></i></a>
+                <a href="#" class="text-gray-600 hover:text-blue-600"><i class="fas fa-user"></i></a>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="p-6">
+            <!-- Navigation -->
+            <nav class="flex space-x-6 mb-6">
+                <a href="#" class="text-gray-600 font-semibold">Employees</a>
+                <a href="#" class="text-gray-600 font-semibold">Documents</a>
+                <a href="#" class="text-gray-600 font-semibold">Engage</a>
+            </nav>
+            
+            <!-- Employee Directory -->
+            <section>
+                <h2 class="text-2xl font-bold text-gray-700 mb-4">Employee Directory</h2>
+                
+                <!-- Search Filters -->
+                <div class="flex space-x-4 mb-4">
+                    <select class="border p-2 rounded-lg">
+                        <option>Department</option>
+                        <option>Neo X-SME-University</option>
+                    </select>
+                    <select class="border p-2 rounded-lg">
+                        <option>Location</option>
+                    </select>
+                    <input type="text" placeholder="Search" class="border p-2 rounded-lg flex-grow">
+                    <button class="bg-blue-600 text-white px-4 py-2 rounded-lg"><i class="fas fa-filter"></i></button>
+                </div>
+
+                <!-- Employee Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <!-- Employee Card -->
+                    <div class="bg-white p-4 rounded-lg shadow flex items-center space-x-4">
+                        <img src="https://placehold.co/100x100" alt="Ajinroch A" class="w-16 h-16 rounded-full">
+                        <div>
+                            <h3 class="text-xl font-bold">Ajinroch A</h3>
+                            <p class="text-gray-600">Associate - Technical Trainer</p>
+                            <p class="text-gray-600">Department: Neo X-SME-University</p>
+                            <p class="text-gray-600">Location: Coimbatore</p>
+                            <p class="text-gray-600">Email: ajinroch.a@iamneo.ai</p>
+                        </div>
+                    </div>
+                    <!-- Repeat for other employees -->
+                    <div class="bg-white p-4 rounded-lg shadow flex items-center space-x-4">
+                        <img src="https://placehold.co/100x100" alt="Anindita Bhattacharya" class="w-16 h-16 rounded-full">
+                        <div>
+                            <h3 class="text-xl font-bold">Anindita Bhattacharya</h3>
+                            <p class="text-gray-600">Junior Associate-Technical Trainer</p>
+                            <p class="text-gray-600">Department: Neo X-SME-University</p>
+                            <p class="text-gray-600">Location: Coimbatore</p>
+                            <p class="text-gray-600">Email: aninditta.b@iamneo.ai</p>
+                        </div>
+                    </div>
+                    <!-- More employee cards as needed -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
